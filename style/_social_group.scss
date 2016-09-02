@@ -1,0 +1,29 @@
+.social_group{
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social_button{
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  background-image-position: 50% 50%;
+  background-image-repeat: no-repeat;
+  display: inline-block;
+  border-radius: 20px;
+  float: left;
+
+  .twitter{
+    background-image: url(../images/icons/social/twitter.png);
+  }
+  .facebook{
+    background-image: url(../images/icons/social/twitter.png);
+  }
+  .pinterest{
+    background-image: url(../images/icons/social/twitter.png);
+  }
+  .google{
+    background-image: url(../images/icons/social/twitter.png);
+  }
+}

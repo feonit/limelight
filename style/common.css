@@ -1,0 +1,282 @@
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0 auto;
+  width: 1400px; }
+
+p {
+  margin: 0; }
+
+@font-face {
+  font-family: NexaSlabXBold;
+  src: url(../fonts/Nexa_Slab_W01_Bold.otf); }
+@font-face {
+  font-family: ProximaNovaLight;
+  src: url(../fonts/proximanova-light.otf); }
+@font-face {
+  font-family: ProximaNovaSemiBold;
+  src: url(../fonts/proximanova-semibold.otf); }
+@font-face {
+  font-family: Pompadur;
+  /* Имя шрифта */
+  src: url(../fonts/pompadur.ttf);
+  /* Путь к файлу со шрифтом */ }
+.home_icon {
+  display: block;
+  width: 13px;
+  height: 12px;
+  background: url(../images/icons/home.png) 50% 50% no-repeat; }
+
+.glyphicon:before {
+  position: relative;
+  left: -5px; }
+
+.glyphicon_comment:before {
+  content: url(../images/icons/comment.png); }
+
+.glyphicon_download:before {
+  content: url(../images/icons/download.png); }
+
+.glyphicon_eye:before {
+  content: url(../images/icons/eye.png); }
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
+
+.menu_item {
+  /** Removes the bullets */
+  list-style-type: none;
+  /** remove browser default settings */
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-left: 40px;
+  /** fix inline space todo */
+  margin-right: -5px; }
+
+.menu_item:last-of-type {
+  margin-right: 0; }
+
+.menu_link {
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  color: black;
+  font-family: ProximaNovaSemiBold; }
+
+.content_title {
+  border-left: 6px solid #86c840;
+  padding-left: 18px;
+  margin-top: 55px;
+  margin-bottom: 55px; }
+
+.top_title {
+  font-size: 26px;
+  font-family: NexaSlabXBold; }
+
+.bottom_title {
+  font-size: 10px;
+  color: #aaaaaa;
+  font-family: ProximaNovaLight; }
+
+.quote-bg {
+  background: #f1f1f1; }
+
+.quote {
+  text-align: center;
+  font-size: 28px;
+  font-family: ProximaNovaLight;
+  /** место под картинку и отступ */
+  padding: 40px 105px;
+  margin: 0 230px; }
+
+.quotes {
+  position: relative; }
+  .quotes:before, .quotes:after {
+    content: "";
+    display: inline-block;
+    background: #86c840 url(../images/quote_img.png) 50% 50% no-repeat;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    border-radius: 23px; }
+  .quotes:before {
+    top: 45px;
+    left: 0; }
+  .quotes:after {
+    bottom: 47px;
+    right: 0;
+    transform: rotate(180deg); }
+
+.item {
+  display: block;
+  float: left;
+  margin-right: 10px; }
+
+.item_preview {
+  height: 225px;
+  width: 300px;
+  background: #eeeeee;
+  border-radius: 5px;
+  position: relative; }
+
+.item_bar_wrapper {
+  padding: 5px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.item_bar {
+  background: #404040;
+  color: white;
+  height: 40px;
+  padding: 15px 5px;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: ProximaNovaLight;
+  display: none; }
+
+.item_preview:hover .item_bar {
+  display: block; }
+
+.bar_date {
+  float: left; }
+
+.bar_indicators {
+  float: right; }
+
+.indicator {
+  margin-left: 20px; }
+
+.item_title {
+  padding: 15px 20px; }
+  .item_title .top_title {
+    font-size: 14px; }
+  .item_title .bottom_title {
+    font-size: 12px; }
+
+.btn_arrow {
+  height: 30px;
+  width: 30px;
+  background: #86c840 url(../images/arrow_img.png) 50% 50% no-repeat;
+  display: block;
+  border-radius: 15px;
+  float: right; }
+
+.item_info {
+  float: left; }
+
+.main_menu {
+  float: right;
+  /** подсвечиваем ссылка */
+  /* прячем активную ссылку */ }
+  .main_menu .menu_link {
+    position: relative;
+    font-size: 16px;
+    font-family: ProximaNovaSemiBold; }
+  .main_menu .menu_link__active:after, .main_menu .menu_link:hover:after {
+    content: "";
+    display: block;
+    background: url(../images/pointer.png) 50% 100% no-repeat;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    top: 25px;
+    right: 0;
+    left: 0;
+    margin: 0 auto; }
+  .main_menu:hover .menu_link__active:after {
+    background: none; }
+
+.footer_menu {
+  float: left;
+  text-align: center; }
+  .footer_menu .menu_link {
+    font-size: 10px;
+    font-family: ProximaNovaLight; }
+
+.social_group {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center; }
+
+.social_button {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  background-image-position: 50% 50%;
+  background-image-repeat: no-repeat;
+  display: inline-block;
+  border-radius: 20px;
+  float: left; }
+  .social_button .twitter {
+    background-image: url(../images/icons/social/twitter.png); }
+  .social_button .facebook {
+    background-image: url(../images/icons/social/twitter.png); }
+  .social_button .pinterest {
+    background-image: url(../images/icons/social/twitter.png); }
+  .social_button .google {
+    background-image: url(../images/icons/social/twitter.png); }
+
+.header, .content_title, .items_row, .footer {
+  margin-left: 230px;
+  margin-right: 230px; }
+
+.header {
+  padding: 30px 0; }
+
+.menu_align {
+  margin: 10px 0; }
+
+/* каскад */
+.footer_menu .menu_item {
+  margin-left: 30px; }
+
+.large_btn {
+  margin: 50px auto;
+  display: block;
+  background: #86c840;
+  border: none;
+  border-radius: 3px;
+  padding: 12px 55px 12px 30px;
+  color: white;
+  text-shadow: 0 1px 2px #57b227;
+  position: relative;
+  font-size: 12px; }
+
+.large_btn:after {
+  content: url(../images/arrow_img.png);
+  position: absolute;
+  right: 30px; }
+
+.footer {
+  text-align: center; }
+
+.right_info {
+  float: right; }
+
+/*# sourceMappingURL=common.css.map */

@@ -1,0 +1,30 @@
+
+.menu-list{
+
+}
+
+.menu_item{
+  /** Removes the bullets */
+  list-style-type: none;
+
+  /** remove browser default settings */
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-left: 40px;
+
+  /** fix inline space todo */
+  margin-right: -5px;
+}
+
+.menu_item:last-of-type{
+  margin-right: 0;
+}
+
+.menu_link{
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  color: black;
+  font-family: ProximaNovaSemiBold;
+}

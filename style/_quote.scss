@@ -1,0 +1,38 @@
+.quote-bg{
+  background: #f1f1f1;
+}
+
+.quote{
+  text-align: center;
+  font-size: 28px;
+  font-family: ProximaNovaLight;
+
+  /** место под картинку и отступ */
+  padding: 40px (45px + 60px);
+  margin: 0 230px;
+}
+
+.quotes{
+  position: relative;
+
+  &:before, &:after{
+    content:"";
+    display: inline-block;
+    background: rgb(134, 200, 64) url(../images/quote_img.png) 50% 50% no-repeat;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    border-radius: 23px;
+  }
+
+  &:before{
+    top: 45px;
+    left: 0;
+  }
+
+  &:after{
+    bottom: 47px;
+    right: 0;
+    transform: rotate(180deg)
+  }
+}
