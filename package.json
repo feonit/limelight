@@ -1,0 +1,26 @@
+{
+  "name": "limelight",
+  "version": "1.0.0",
+  "description": "Internet Explorer 8.0+",
+  "main": "index.js",
+  "dependencies": {
+    "compass": "^0.1.1",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-compass": "^2.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feonit/limelight.git"
+  },
+  "author": "Orlov Leonid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feonit/limelight/issues"
+  },
+  "homepage": "https://github.com/feonit/limelight#readme"
+}

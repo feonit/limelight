@@ -1,7 +1,10 @@
 body{
   padding: 0;
+  margin: 0;
+}
+
+.container {
   margin: 0 auto;
-  width: 1400px;
 }
 
 p{
@@ -12,17 +15,12 @@ p{
 @import "./icons";
 @import "./cf";
 @import "./menu-list";
-@import "./title";
-@import "./quote";
-@import "./tiles";
-@import "./main_menu";
-@import "./footer_menu";
-@import "./social_group";
-
-.header, .content_title, .items_row, .footer{
-  margin-left: 230px;
-  margin-right: 230px;
-}
+@import "./content/title";
+@import "./content/quote";
+@import "./content/tiles";
+@import "./header/main_menu";
+@import "./footer/footer";
+@import "./_media";
 
 .header{
   padding: 30px 0;
@@ -33,7 +31,7 @@ p{
 }
 
 /* каскад */
-.footer_menu .menu_item{
+.menu_item__interval_small{
   margin-left: 30px;
 }
 
@@ -55,12 +53,4 @@ p{
   right: 30px;
 }
 
-.footer{
-  text-align: center;
-}
-
-
-.right_info{
-  float: right;
-}
 

@@ -1,0 +1,107 @@
+// 300, 620, 940, 1260
+
+$scroll: 15px;// дефолтный
+$item_width : 300px;
+$space_between_elements: 20px;
+$wrapper_space: 2*40px;
+
+// длина ряда элементов заданного количества с учетом пространства между ними
+$one_elem: $item_width;
+$two_elem: 2*$item_width + $space_between_elements;
+$three_elem: 3*$item_width + 2*$space_between_elements;
+$four_elem: 4*$item_width + 3*$space_between_elements;
+$five_elem: 5*$item_width + 4*$space_between_elements;
+
+// длинна скрина для количества элементов (везде идет поправка с учетом ширины скрола)
+$screen_one: $one_elem + $scroll + $wrapper_space;
+$screen_two: $two_elem + $scroll + $wrapper_space;
+$screen_three: $three_elem + $scroll + $wrapper_space;
+$screen_four: $four_elem + $scroll + $wrapper_space;
+$screen_five: $five_elem + $scroll + $wrapper_space;
+
+//1
+@media screen and (min-width: $screen_one) and (max-width: $screen_two) {
+  .container{
+    width: $one_elem;
+  }
+  .items_row{
+    width: $one_elem;
+    right: 0;
+    position: relative;
+  }
+  .quote{
+    font-size: 18px;
+  }
+  .footer_menu .menu_item{
+    display: block;
+    margin-left: 0;
+  }
+}
+
+//2
+@media screen and (min-width: $screen_two) and (max-width: $screen_three) {
+  .container{
+    width: $two_elem;
+  }
+
+  body{
+    overflow-x: hidden;// для создания пространства между элементами в списке
+    //(минусом этого способо является ограничение накладываемое этим правилом, но судя по макету, это нам не мешает,
+    //так как дочерних элементов выходящих из item нет)
+  }
+
+  .items_row{
+    width: $two_elem + 20px;// для создания пространства между элементами в списке
+    right: 10px;// для создания пространства между элементами в списке
+    position: relative;// для создания пространства между элементами в списке
+  }
+
+  .menu_item{
+    margin-left: 22px;
+  }
+}
+
+//3
+@media screen and (min-width: $screen_three) and (max-width: $screen_four) {
+  .container{
+    width: $three_elem;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .items_row{
+    width: $three_elem + 20px;
+    right: 10px;
+    position: relative;
+  }
+}
+
+//4
+@media screen and (min-width: $screen_four) and (max-width: $screen_five) {
+  .container{
+    width: $four_elem;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .items_row{
+    width: $four_elem + 20px;
+    right: 10px;
+    position: relative;
+  }
+}
+
+//5
+@media screen and (min-width: $screen_five) {
+  .container{
+    width: $five_elem;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .items_row{
+    width: $five_elem + 20px;
+    right: 10px;
+    position: relative;
+  }
+}

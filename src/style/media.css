@@ -1,0 +1,46 @@
+@media screen and (min-width: 315px) and (max-width: 635px) {
+  .container {
+    width: 300px; }
+
+  .items_row {
+    width: 300px;
+    right: 0;
+    position: relative; } }
+@media screen and (min-width: 635px) and (max-width: 955px) {
+  .container {
+    width: 620px;
+    overflow-x: hidden; }
+
+  .items_row {
+    width: 640px;
+    right: 10px;
+    position: relative; } }
+@media screen and (min-width: 955px) and (max-width: 1275px) {
+  .container {
+    width: 940px;
+    overflow-x: hidden; }
+
+  .items_row {
+    width: 960px;
+    right: 10px;
+    position: relative; } }
+@media screen and (min-width: 1275px) and (max-width: 1595px) {
+  .container {
+    width: 1275px;
+    overflow-x: hidden; }
+
+  .items_row {
+    width: 1295px;
+    right: 10px;
+    position: relative; } }
+@media screen and (min-width: 1595px) {
+  .container {
+    width: 1595px;
+    overflow-x: hidden; }
+
+  .items_row {
+    width: 1615px;
+    right: 10px;
+    position: relative; } }
+
+/*# sourceMappingURL=media.css.map */

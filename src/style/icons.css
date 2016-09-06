@@ -1,0 +1,52 @@
+.icons-sprite, .icons-comment, .icons-download, .icons-eye, .icons-home, .icon_eye:before, .icon_comment:before, .icon_download:before {
+  background-image: url('../images/icons-see0c58930e.png');
+  background-repeat: no-repeat;
+}
+
+.icons-comment {
+  background-position: 0 0;
+}
+
+.icons-download {
+  background-position: 0 -11px;
+}
+
+.icons-eye {
+  background-position: 0 -22px;
+}
+
+.icons-home {
+  background-position: 0 -34px;
+}
+
+.home_icon {
+  display: block;
+  width: 13px;
+  height: 12px;
+  background: url(../images/icons/home.png) 50% 50% no-repeat;
+}
+
+.icon:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+.icon_eye:before {
+  height: 12px;
+  width: 21px;
+  background-position: 0 -22px;
+}
+
+.icon_comment:before {
+  height: 11px;
+  width: 13px;
+  background-position: 0 0;
+}
+
+.icon_download:before {
+  height: 11px;
+  width: 13px;
+  background-position: 0 -11px;
+}

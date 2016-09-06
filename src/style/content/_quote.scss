@@ -1,5 +1,13 @@
-.quote-bg{
+.quote_bg{
   background: #f1f1f1;
+  width: 200%;
+  margin-left: -50%;
+  overflow: hidden;
+}
+
+.quote_wrapper{
+  width: 50%;
+  margin: auto;
 }
 
 .quote{
@@ -9,7 +17,6 @@
 
   /** место под картинку и отступ */
   padding: 40px (45px + 60px);
-  margin: 0 230px;
 }
 
 .quotes{

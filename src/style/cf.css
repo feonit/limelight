@@ -12,16 +12,17 @@
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */ }
+  /* 2 */
+}
 
 .cf:after {
-  clear: both; }
+  clear: both;
+}
 
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
 .cf {
-  *zoom: 1; }
-
-/*# sourceMappingURL=cf.css.map */
+  *zoom: 1;
+}

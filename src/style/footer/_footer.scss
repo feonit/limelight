@@ -1,0 +1,64 @@
+.footer{
+
+}
+
+.footer_wrapper{
+  margin-top: 50px;
+  margin-bottom: 80px;
+  font-size: 14px;
+  display: table;
+  width: 100%;
+}
+
+/** левое меню */
+.footer_menu{
+  margin: 0;
+  display: table-cell;
+  vertical-align: middle;
+
+  .menu_link{
+    font-family: ProximaNovaLight;
+  }
+}
+
+/** группа иконок соц сетей */
+.social_group{
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.social_button{
+  height: 40px;
+  width: 40px;
+  background: black;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 5px;
+  border-radius: 20px;
+  float: left;
+  &.twitter{
+    background-image: url(../images/icons/social/twitter.png);
+  }
+  &.facebook{
+    background-image: url(../images/icons/social/facebook.png);
+  }
+  &.pinterest{
+    background-image: url(../images/icons/social/pinterest.png);
+  }
+  &.google{
+    background-image: url(../images/icons/social/google.png);
+  }
+}
+
+/** дополнительная информация */
+.right_info{
+  display: table-cell;
+  text-align: right;
+  font-family: ProximaNovaLight;
+  vertical-align: bottom;
+}
+.copyright:before{
+  content: "\00a9";
+  color: rgb(188,188,188);
+}

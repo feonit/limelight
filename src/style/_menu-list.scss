@@ -1,6 +1,6 @@
 
 .menu-list{
-
+  padding: 0;
 }
 
 .menu_item{
@@ -16,7 +16,9 @@
   /** fix inline space todo */
   margin-right: -5px;
 }
-
+.menu_item:first-of-type{
+  margin-left: 0;
+}
 .menu_item:last-of-type{
   margin-right: 0;
 }

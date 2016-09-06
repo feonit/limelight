@@ -1,0 +1,37 @@
+@import "compass/utilities/sprites";
+@import "icons/*.png";
+@include all-icons-sprites;
+
+.home_icon{
+  display: block;
+  width: 13px;
+  height: 12px;
+  background: url(../images/icons/home.png) 50% 50% no-repeat;
+}
+
+
+
+.icon:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+.icon_eye:before{
+  height: icons-sprite-height(eye);
+  width: icons-sprite-width(eye);
+  @include icons-sprite(eye);
+}
+
+.icon_comment:before{
+  height: icons-sprite-height(comment);
+  width: icons-sprite-width(comment);
+  @include icons-sprite(comment);
+}
+
+.icon_download:before{
+  height: icons-sprite-height(download);
+  width: icons-sprite-width(download);
+  @include icons-sprite(download);
+}
