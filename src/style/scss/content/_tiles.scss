@@ -77,15 +77,29 @@ $padding_bar: 5px;
 }
 
 .btn_arrow{
-  height: 30px;
-  width: 30px;
-  background: rgb(134, 200, 64) url(../images/arrow_img.png) 50% 50% no-repeat;
+  background-color: rgb(134, 200, 64);
   display: block;
   border-radius: 15px;
   float: right;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.btn_arrow:before{
+  content: "";
+  display: block;
+  height: icons-sprite-height(arrow_img);
+  width: icons-sprite-width(arrow_img);
+  @include icons-sprite(arrow_img);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
 }
 
 .item_info{
   float: left;
 }
-//background: red url(../images/icons/eye.png) 50% 50% !important;

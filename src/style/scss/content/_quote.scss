@@ -25,9 +25,14 @@
   &:before, &:after{
     content:"";
     display: inline-block;
-    background: rgb(134, 200, 64) url(../images/quote_img.png) 50% 50% no-repeat;
-    width: 45px;
+    background-color: rgb(134, 200, 64);
     height: 45px;
+    width: 45px;
+
+    // offset'ы как то криво ставятся, не ясно из за чего, пока что из за этого не получится в смарт режим перейти
+    @include icons-sprite(quote_img);
+    @include sprite-background-position(sprite-map("icons/*.png"), quote_img, 10, -4);
+
     position: absolute;
     border-radius: 23px;
   }

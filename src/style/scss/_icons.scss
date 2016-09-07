@@ -2,20 +2,21 @@
 @import "icons/*.png";
 @include all-icons-sprites;
 
-.home_icon{
-  display: block;
-  width: 13px;
-  height: 12px;
-  background: url(../images/icons/home.png) 50% 50% no-repeat;
+.home_icon:before{
+  content: "";
+  display: inline-block;
+  vertical-align: baseline;
+  height: icons-sprite-height(home);
+  width: icons-sprite-width(home);
+  @include icons-sprite(home);
 }
-
-
 
 .icon:before {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  padding-left: 5px;
+  position: relative;
+  right: 5px;
 }
 
 .icon_eye:before{

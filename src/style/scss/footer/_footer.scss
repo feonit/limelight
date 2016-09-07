@@ -37,17 +37,36 @@
   margin: 0 5px;
   border-radius: 20px;
   float: left;
-  &.twitter{
-    background-image: url(../images/icons/social/twitter.png);
+  position: relative;
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
   }
-  &.facebook{
-    background-image: url(../images/icons/social/facebook.png);
+  &.twitter:before{
+    height: icons-sprite-height(twitter);
+    width: icons-sprite-width(twitter);
+    @include icons-sprite(twitter);
   }
-  &.pinterest{
-    background-image: url(../images/icons/social/pinterest.png);
+  &.facebook:before{
+    height: icons-sprite-height(facebook);
+    width: icons-sprite-width(facebook);
+    @include icons-sprite(facebook);
   }
-  &.google{
-    background-image: url(../images/icons/social/google.png);
+  &.pinterest:before{
+    height: icons-sprite-height(pinterest);
+    width: icons-sprite-width(pinterest);
+    @include icons-sprite(pinterest);
+  }
+  &.google:before{
+    height: icons-sprite-height(google);
+    width: icons-sprite-width(google);
+    @include icons-sprite(google);
   }
 }
 

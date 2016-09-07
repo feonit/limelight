@@ -1,3 +1,5 @@
+@import "compass/utilities/sprites";
+
 .main_menu{
   float: right;
 
@@ -11,7 +13,12 @@
   .menu_link__active:after, .menu_link:hover:after{
     content: "";
     display: block;
-    background: url(../images/pointer.png) 50% 100% no-repeat;
+
+    height: icons-sprite-height(pointer);
+    width: icons-sprite-width(pointer);
+    @include icons-sprite(pointer);
+
+
     height: 10px;
     position: absolute;
     width: 10px;

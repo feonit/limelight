@@ -7,10 +7,11 @@ body{
   margin: 0 auto;
 }
 
-p{
+p {
   margin: 0;
 }
 
+@import "./base";
 @import "./fonts";
 @import "./icons";
 @import "./cf";
@@ -18,6 +19,7 @@ p{
 @import "./content/title";
 @import "./content/quote";
 @import "./content/tiles";
+@import "./content/button";
 @import "./header/main_menu";
 @import "./footer/footer";
 @import "./_media";
@@ -35,22 +37,6 @@ p{
   margin-left: 30px;
 }
 
-.large_btn{
-  margin: 50px auto;
-  display: block;
-  background: rgb(134,200,64);
-  border: none;
-  border-radius: 3px;
-  padding: 12px 55px 12px 30px;
-  color: white;
-  text-shadow: 0 1px 2px rgba(87,178,39,1);
-  position: relative;
-  font-size: 12px;
-}
-.large_btn:after{
-  content: url(../images/arrow_img.png);
-  position: absolute;
-  right: 30px;
-}
+
 
 
