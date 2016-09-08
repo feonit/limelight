@@ -1,5 +1,23 @@
 @import "compass/css3";
 
-@include font-face("NexaSlabXBold", font-files("Nexa_Slab_W01_Bold.otf"));
-@include font-face("ProximaNovaLight", font-files("proximanova-light.otf"));
-@include font-face("ProximaNovaSemiBold", font-files("proximanova-semibold.otf"));
+@include font-face("NexaSlabXBold", font-files(
+                "NexaSlab-XBold/Nexa_Slab_W01_Bold.eot",
+                "NexaSlab-XBold/Nexa_Slab_W01_Bold.otf",
+                "NexaSlab-XBold/Nexa_Slab_W01_Bold.svg",
+                "NexaSlab-XBold/Nexa_Slab_W01_Bold.ttf",
+                "NexaSlab-XBold/Nexa_Slab_W01_Bold.woff"
+));
+@include font-face("ProximaNovaLight", font-files(
+                "ProximaNova-Light/ProximaNova-Light.eot",
+                "ProximaNova-Light/ProximaNova-Light.otf",
+                "ProximaNova-Light/ProximaNova-Light.svg",
+                "ProximaNova-Light/ProximaNova-Light.ttf",
+                "ProximaNova-Light/ProximaNova-Light.woff"
+));
+@include font-face("ProximaNovaSemiBold", font-files(
+                "ProximaNova-Semibold/ProximaNova-Semibold.eot",
+                "ProximaNova-Semibold/ProximaNova-Semibold.otf",
+                "ProximaNova-Semibold/ProximaNova-Semibold.svg",
+                "ProximaNova-Semibold/ProximaNova-Semibold.ttf",
+                "ProximaNova-Semibold/proximanova-semibold.woff"
+));

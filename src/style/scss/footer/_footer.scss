@@ -1,83 +1,39 @@
 .footer{
-
-}
-
-.footer_wrapper{
   margin-top: 50px;
   margin-bottom: 80px;
   font-size: 14px;
+  line-height: 14px;
   display: table;
   width: 100%;
 }
 
-/** левое меню */
 .footer_menu{
-  margin: 0;
+  width: 30%;
   display: table-cell;
   vertical-align: middle;
-
-  .menu_link{
-    font-family: ProximaNovaLight;
-  }
 }
 
 /** группа иконок соц сетей */
-.social_group{
-  vertical-align: middle;
+.footer_social{
   display: table-cell;
+  width: 200px;
+  text-align: center;
 }
 
-.social_button{
-  height: 40px;
-  width: 40px;
-  background: black;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  display: block;
-  margin: 0 5px;
-  border-radius: 20px;
-  float: left;
-  position: relative;
-  &:before{
-    content: "";
-    display: block;
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-  }
-  &.twitter:before{
-    height: icons-sprite-height(twitter);
-    width: icons-sprite-width(twitter);
-    @include icons-sprite(twitter);
-  }
-  &.facebook:before{
-    height: icons-sprite-height(facebook);
-    width: icons-sprite-width(facebook);
-    @include icons-sprite(facebook);
-  }
-  &.pinterest:before{
-    height: icons-sprite-height(pinterest);
-    width: icons-sprite-width(pinterest);
-    @include icons-sprite(pinterest);
-  }
-  &.google:before{
-    height: icons-sprite-height(google);
-    width: icons-sprite-width(google);
-    @include icons-sprite(google);
-  }
+.footer_social_group{
+  display: inline-block;
 }
 
 /** дополнительная информация */
-.right_info{
+.footer_copyright{
   display: table-cell;
   text-align: right;
-  font-family: ProximaNovaLight;
+  font-family: ProximaNovaSemiBold;
   vertical-align: bottom;
-}
-.copyright:before{
-  content: "\00a9";
-  color: rgb(188,188,188);
+  width: 30%;
+
+  &:before{
+    content: "\00a9";
+    color: #BCBCBC;
+  }
 }

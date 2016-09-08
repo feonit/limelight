@@ -1,0 +1,42 @@
+.social_link{
+  height: 40px;
+  width: 40px;
+  background: black;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 5px;
+  border-radius: 20px;
+  float: left;
+  position: relative;
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+  }
+  &.twitter:before{
+    height: icons-sprite-height(twitter);
+    width: icons-sprite-width(twitter);
+    @include icons-sprite(twitter);
+  }
+  &.facebook:before{
+    height: icons-sprite-height(facebook);
+    width: icons-sprite-width(facebook);
+    @include icons-sprite(facebook);
+  }
+  &.pinterest:before{
+    height: icons-sprite-height(pinterest);
+    width: icons-sprite-width(pinterest);
+    @include icons-sprite(pinterest);
+  }
+  &.google:before{
+    height: icons-sprite-height(google);
+    width: icons-sprite-width(google);
+    @include icons-sprite(google);
+  }
+}

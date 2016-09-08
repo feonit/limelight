@@ -1,12 +1,12 @@
 .button{
   margin: 50px auto;
   display: block;
-  background: rgb(134,200,64);
+  background: #86C840;
   border: none;
   border-radius: 3px;
   padding: 12px 55px 12px 30px;
   color: white;
-  text-shadow: 0 1px 2px rgba(87,178,39,1);
+  text-shadow: 0 1px 2px #57B227;
   position: relative;
   font-size: 16px;
 }
@@ -15,6 +15,9 @@
   display: inline-block;
   position: absolute;
   right: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   height: icons-sprite-height(arrow_img);
   width: icons-sprite-width(arrow_img);
   @include icons-sprite(arrow_img);

@@ -1,0 +1,16 @@
+//прижимаем подвал к низу страницы
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+.wrapper {
+  display: table;
+  height: 100%;
+  margin: 0 auto;
+  table-layout: fixed;
+}
+.content {
+  display: table-row;
+  height: 100%;
+}

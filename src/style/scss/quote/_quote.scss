@@ -25,13 +25,13 @@
   &:before, &:after{
     content:"";
     display: inline-block;
-    background-color: rgb(134, 200, 64);
+    background-color: #86C840;
     height: 45px;
     width: 45px;
 
     // offset'ы как то криво ставятся, не ясно из за чего, пока что из за этого не получится в смарт режим перейти
     @include icons-sprite(quote_img);
-    @include sprite-background-position(sprite-map("icons/*.png"), quote_img, 10, -4);
+    @include sprite-background-position(sprite-map("icons/*.png"), quote_img, 10, -11);
 
     position: absolute;
     border-radius: 23px;

@@ -1,5 +1,4 @@
-
-.menu-list{
+.menu{
   padding: 0;
 }
 
@@ -11,14 +10,11 @@
   margin: 0;
   padding: 0;
   display: inline-block;
-  margin-left: 40px;
 
   /** fix inline space todo */
-  margin-right: -5px;
+  margin-right: 40px + (-5px);
 }
-.menu_item:first-of-type{
-  margin-left: 0;
-}
+
 .menu_item:last-of-type{
   margin-right: 0;
 }
@@ -26,7 +22,13 @@
 .menu_link{
   text-decoration: none;
   display: block;
-  font-weight: bold;
   color: black;
+}
+
+.menu_item__interval_small{
+  margin-right: 30px;
+}
+
+.menu_link_semiBold{
   font-family: ProximaNovaSemiBold;
 }

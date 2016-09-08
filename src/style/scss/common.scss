@@ -1,42 +1,21 @@
-body{
-  padding: 0;
-  margin: 0;
-}
-
-.container {
-  margin: 0 auto;
-}
-
-p {
-  margin: 0;
-}
-
+// для удобства просто добавим ресет
+@import "compass/reset";
 @import "./base";
+@import "./structure";
 @import "./fonts";
 @import "./icons";
 @import "./cf";
-@import "./menu-list";
-@import "./content/title";
-@import "./content/quote";
-@import "./content/tiles";
-@import "./content/button";
-@import "./header/main_menu";
+@import "./header/header";
+@import "./logo/logo";
+@import "./quote/quote";
+@import "./tile/tile";
+@import "./social_link/social_link";
+@import "./title/title";
+@import "./button/button";
+@import "./menu/menu";
+@import "./menu/menu_header";
 @import "./footer/footer";
 @import "./_media";
-
-.header{
-  padding: 30px 0;
-}
-
-.menu_align{
-  margin: 10px 0;
-}
-
-/* каскад */
-.menu_item__interval_small{
-  margin-left: 30px;
-}
-
 
 
 

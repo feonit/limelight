@@ -21,7 +21,7 @@ $screen_five: $five_elem + $scroll + $wrapper_space;
 
 //1
 @media screen and (min-width: $screen_one) and (max-width: $screen_two) {
-  .container{
+  .wrapper{
     width: $one_elem;
   }
   .items_row{
@@ -40,7 +40,7 @@ $screen_five: $five_elem + $scroll + $wrapper_space;
 
 //2
 @media screen and (min-width: $screen_two) and (max-width: $screen_three) {
-  .container{
+  .wrapper{
     width: $two_elem;
   }
 
@@ -63,7 +63,7 @@ $screen_five: $five_elem + $scroll + $wrapper_space;
 
 //3
 @media screen and (min-width: $screen_three) and (max-width: $screen_four) {
-  .container{
+  .wrapper{
     width: $three_elem;
   }
   body{
@@ -78,7 +78,7 @@ $screen_five: $five_elem + $scroll + $wrapper_space;
 
 //4
 @media screen and (min-width: $screen_four) and (max-width: $screen_five) {
-  .container{
+  .wrapper{
     width: $four_elem;
   }
   body{
@@ -93,7 +93,7 @@ $screen_five: $five_elem + $scroll + $wrapper_space;
 
 //5
 @media screen and (min-width: $screen_five) {
-  .container{
+  .wrapper{
     width: $five_elem;
   }
   body{

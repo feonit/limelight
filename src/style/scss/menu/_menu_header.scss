@@ -1,27 +1,23 @@
 @import "compass/utilities/sprites";
 
-.main_menu{
+.menu_header{
   float: right;
 
   .menu_link{
     position: relative;
     font-size: 16px;
-    font-family: ProximaNovaSemiBold;
+    line-height: 16px;
+    font-family: NexaSlabXBold;
   }
 
   /** подсвечиваем ссылка */
   .menu_link__active:after, .menu_link:hover:after{
     content: "";
     display: block;
-
     height: icons-sprite-height(pointer);
     width: icons-sprite-width(pointer);
     @include icons-sprite(pointer);
-
-
-    height: 10px;
     position: absolute;
-    width: 10px;
     top: 25px;
     right: 0;
     left: 0;

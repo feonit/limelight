@@ -1,0 +1,115 @@
+.tile{
+  width: 300px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.tile_preview{
+  height: 225px;
+  width: 300px;
+  background: #EEEEEE;
+  border-radius: 5px;
+  position: relative;
+}
+$padding_bar: 5px;
+.tile_bar{
+  padding: $padding_bar;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.tile_bar_in{
+  line-height: 40px;
+  background: #404040;
+  color: white;
+  height: 38px;
+  font-size: 12px;
+  font-family: ProximaNovaLight;
+  bottom: -(38px + $padding_bar + 3px);
+  position: relative;
+  border-radius: 0 0 2px 2px;
+  border-left: 1px solid #5f5f5f;
+  border-bottom: 1px solid #5f5f5f;
+  border-top: 1px solid #D7D7D7;
+  border-right: 1px solid #D7D7D7;
+
+  -webkit-transition: bottom .1s ease-in 0.1s;
+  -moz-transition: bottom .1s ease-in 0.1s;
+  -o-transition: bottom .1s ease-in 0.1s;
+  transition: bottom .1s ease-in 0.1s;
+}
+
+// поведение
+.tile_preview:hover .tile_bar_in{
+  bottom: 0;
+}
+
+.tile_bar_date{
+  display: inline;
+  margin-left: 10px;
+}
+
+.tile_bar_indicators{
+  margin-right: 14px;
+  display: inline;
+  float: right;
+}
+
+.tile_indicator{
+  display: inline;
+  float: left;
+  margin-left: 16px;
+}
+
+.tile_title{
+  position: relative;
+  //for btn
+  margin-bottom: 50px;
+  margin-top: 20px;
+  padding: 0 (32px + 2*12px) 0 15px;
+}
+
+.tile_info{
+  float: left;
+}
+
+.tile_info_top_title{
+  font-size: 16px;
+  font-family: NexaSlabXBold;
+}
+
+.tile_info_bottom_title{
+  font-size: 14px;
+  font-family: ProximaNovaSemiBold;
+  color: #AAAAAA;
+  margin-top: 8px;
+}
+
+.tile_btn_arrow{
+  background-color: #86C840;
+  display: block;
+  border-radius: 16px;
+  float: right;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 12px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  &:before{
+    content: "";
+    display: block;
+    height: icons-sprite-height(arrow_circle_btn);
+    width: icons-sprite-width(arrow_circle_btn);
+    @include icons-sprite(arrow_circle_btn);
+    margin-left: 11px;// смещение как в макете
+    margin-top: 6px;// смещение как в макете
+  }
+}

@@ -1,6 +1,11 @@
+//никакой магии, только хардкор
 $disable-magic-sprite-selectors:true;
 $icons-sprite-sort-by : 'name';
 //$icons-layout:smart;
 $icons-position: 50%;
+
+//особый случай
 $icons-quote_img-spacing: 15px;
-//$icons-spacing: 5px;
+
+//исключить наплывы
+$icons-spacing: 1px;
