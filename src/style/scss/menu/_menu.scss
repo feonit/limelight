@@ -3,20 +3,19 @@
 }
 
 .menu_item{
-  /** Removes the bullets */
   list-style-type: none;
-
-  /** remove browser default settings */
   margin: 0;
   padding: 0;
-  display: inline-block;
-
-  /** fix inline space todo */
-  margin-right: 40px + (-5px);
+  display: inline-block;/** +IE8 */
+  margin-right: 40px + (-5px);/** +IE8 */
 }
 
 .menu_item:last-of-type{
   margin-right: 0;
+}
+
+.menu_item__interval_small{
+  margin-right: 30px;
 }
 
 .menu_link{
@@ -25,10 +24,36 @@
   color: black;
 }
 
-.menu_item__interval_small{
-  margin-right: 30px;
+.menu_link__header{
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: NexaSlabXBold;
 }
 
-.menu_link_semiBold{
+.menu_link__footer{
   font-family: ProximaNovaSemiBold;
+}
+
+.menu__header{
+  float: right;
+
+  /* прячем активную ссылку */
+  &:hover .menu_link__active:after{
+    background: none;
+  }
+}
+
+/** подсвечиваем ссылку */
+.menu_link__active:after, .menu_link:hover:after{
+  content: "";
+  display: block;
+  height: icons-sprite-height(pointer);
+  width: icons-sprite-width(pointer);
+  @include icons-sprite(pointer);
+  position: absolute;
+  top: 25px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
 }

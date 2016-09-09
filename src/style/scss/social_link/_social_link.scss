@@ -19,24 +19,25 @@
     top: 0;
     margin: auto;
   }
-  &.twitter:before{
-    height: icons-sprite-height(twitter);
-    width: icons-sprite-width(twitter);
-    @include icons-sprite(twitter);
-  }
-  &.facebook:before{
-    height: icons-sprite-height(facebook);
-    width: icons-sprite-width(facebook);
-    @include icons-sprite(facebook);
-  }
-  &.pinterest:before{
-    height: icons-sprite-height(pinterest);
-    width: icons-sprite-width(pinterest);
-    @include icons-sprite(pinterest);
-  }
-  &.google:before{
-    height: icons-sprite-height(google);
-    width: icons-sprite-width(google);
-    @include icons-sprite(google);
-  }
+}
+
+.social_link__twitter:before{
+  height: icons-sprite-height(twitter);
+  width: icons-sprite-width(twitter);
+  @include icons-sprite(twitter);
+}
+.social_link__facebook:before{
+  height: icons-sprite-height(facebook);
+  width: icons-sprite-width(facebook);
+  @include icons-sprite(facebook);
+}
+.social_link__pinterest:before{
+  height: icons-sprite-height(pinterest);
+  width: icons-sprite-width(pinterest);
+  @include icons-sprite(pinterest);
+}
+.social_link__google:before{
+  height: icons-sprite-height(google);
+  width: icons-sprite-width(google);
+  @include icons-sprite(google);
 }

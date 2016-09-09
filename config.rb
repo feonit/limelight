@@ -1,5 +1,3 @@
-environment = 'development'
-
 project_path = './'
 
 # public
@@ -18,5 +16,4 @@ fonts_path = './src/style/fonts'
 
 sourcemap = true
 disable_warnings = false
-
-output_style = 'expanded'
+output_style = :compressed
