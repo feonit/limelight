@@ -1,3 +1,5 @@
+@import "compass/css3/transform";
+
 .quote_bg{
   background: #f1f1f1;
   width: 200%;
@@ -44,6 +46,6 @@
   &:after{
     bottom: 47px;
     right: 0;
-    transform: rotate(180deg)
+    @include transform(rotate(180deg));
   }
 }

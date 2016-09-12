@@ -24,7 +24,7 @@ $screen_five: $five_elem + $scroll + $wrapper_space;
   .wrapper{
     width: $one_elem;
   }
-  .items_row{
+  .tiles_row{
     width: $one_elem;
     right: 0;
     position: relative;
@@ -50,7 +50,7 @@ $screen_five: $five_elem + $scroll + $wrapper_space;
     //так как дочерних элементов выходящих из item нет)
   }
 
-  .items_row{
+  .tiles_row{
     width: $two_elem + 20px;// для создания пространства между элементами в списке
     right: 10px;// для создания пространства между элементами в списке
     position: relative;// для создания пространства между элементами в списке
@@ -69,7 +69,7 @@ $screen_five: $five_elem + $scroll + $wrapper_space;
   body{
     overflow-x: hidden;
   }
-  .items_row{
+  .tiles_row{
     width: $three_elem + 20px;
     right: 10px;
     position: relative;
@@ -84,7 +84,7 @@ $screen_five: $five_elem + $scroll + $wrapper_space;
   body{
     overflow-x: hidden;
   }
-  .items_row{
+  .tiles_row{
     width: $four_elem + 20px;
     right: 10px;
     position: relative;
@@ -99,7 +99,7 @@ $screen_five: $five_elem + $scroll + $wrapper_space;
   body{
     overflow-x: hidden;
   }
-  .items_row{
+  .tiles_row{
     width: $five_elem + 20px;
     right: 10px;
     position: relative;

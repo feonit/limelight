@@ -1,0 +1,66 @@
+/* border-radius: вставить картинки вместо кружков border-radius*/
+/*? обработать :last-of-type */
+/*? box-sizing c 8ой */
+
+$circles-spacing: 3px;
+
+@import "compass/utilities/sprites";
+@import "compass/css3/transform";
+@import "circles/*.png";
+@include all-circles-sprites;
+
+// иконки кавычек
+.quotes{
+  &:before{
+    @include transform(none);
+    background-color: transparent;
+    height: circles-sprite-height(circle_quote_left);
+    width: circles-sprite-width(circle_quote_left);
+    @include circles-sprite(circle_quote_left);
+  }
+  &:after{
+    @include transform(none);
+    background-color: transparent;
+    height: circles-height(circle_quote_right);
+    width: circles-width(circle_quote_right);
+    @include circles-sprite(circle_quote_right);
+  }
+}
+
+// социальные иконки
+.social_link{
+  background-color: transparent;
+}
+
+.social_link__twitter:before{
+  height: circles-sprite-height(circle_twitter);
+  width: circles-sprite-width(circle_twitter);
+  @include circles-sprite(circle_twitter);
+}
+.social_link__facebook:before{
+  height: circles-sprite-height(circle_facebook);
+  width: circles-sprite-width(circle_facebook);
+  @include circles-sprite(circle_facebook);
+}
+.social_link__pinterest:before{
+  height: circles-sprite-height(circle_pinterest);
+  width: circles-sprite-width(circle_pinterest);
+  @include circles-sprite(circle_pinterest);
+}
+.social_link__google:before{
+  height: circles-sprite-height(circle_google);
+  width: circles-sprite-width(circle_google);
+  @include circles-sprite(circle_google);
+}
+
+// кнопка со стрелкой
+.tile_btn_arrow{
+  background-color: transparent;
+  &:before{
+    height: circles-sprite-height(circle_arrow);
+    width: circles-sprite-width(circle_arrow);
+    @include circles-sprite(circle_arrow);
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
