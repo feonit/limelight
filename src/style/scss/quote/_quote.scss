@@ -7,6 +7,7 @@
   overflow: hidden;
 }
 
+
 .quote_wrapper{
   width: 50%;
   margin: auto;
@@ -21,8 +22,23 @@
   padding: 40px (45px + 60px);
 }
 
+@keyframes move-in {
+  from {right: -150%}
+  to {right: 0}
+}
+@-webkit-keyframes move-in {
+  from {right: -150%}
+  to {right: 0}
+}
+
+
 .quotes{
   position: relative;
+  right: 0;
+  transition: all .3s;
+  animation: move-in .3s ease-in-out;
+  -webkit-keyframes: move-in  .3s ease-in-out;
+
   &:before, &:after{
     content:"";
     display: inline-block;

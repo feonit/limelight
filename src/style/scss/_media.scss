@@ -36,6 +36,9 @@ $screen_five: $five_elem + $scroll + $wrapper_space;
     display: block;
     margin-left: 0;
   }
+  .menu_item{
+    margin: 5px;
+  }
 }
 
 //2

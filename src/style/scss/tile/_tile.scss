@@ -20,6 +20,11 @@
   border-radius: 5px;
   position: relative;
 }
+.tile_preview_image{
+  width: 300px;
+  height: 225px;
+  border-radius: 5px;
+}
 $padding_bar: 5px;
 .tile_bar{
   padding: $padding_bar;
@@ -32,7 +37,7 @@ $padding_bar: 5px;
 
 .tile_bar_in{
   line-height: 40px;
-  background: #404040;
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   height: 38px;
   font-size: 12px;
@@ -40,10 +45,7 @@ $padding_bar: 5px;
   bottom: -(38px + $padding_bar + 3px);
   position: relative;
   border-radius: 0 0 2px 2px;
-  border-left: 1px solid #5f5f5f;
-  border-bottom: 1px solid #5f5f5f;
-  border-top: 1px solid #D7D7D7;
-  border-right: 1px solid #D7D7D7;
+
   @include transition-property(bottom);
   @include transition-duration(.1s);
   @include transition-delay(.1s);
@@ -120,4 +122,9 @@ $padding_bar: 5px;
     margin-left: 11px;// смещение как в макете
     margin-top: 6px;// смещение как в макете
   }
+  &:hover:before{
+    margin-left: 12px;
+    transition: margin-left .1s ease-out;
+  }
+
 }

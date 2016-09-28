@@ -41,3 +41,8 @@
   width: icons-sprite-width(google);
   @include icons-sprite(google);
 }
+
+.social_link:hover:before{
+  transform: rotate(360deg);
+  transition: transform .4s ease-out;
+}

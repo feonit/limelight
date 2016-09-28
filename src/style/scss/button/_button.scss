@@ -6,20 +6,36 @@
   border-radius: 3px;
   padding: 12px 55px 12px 30px;
   color: white;
-  text-shadow: 0 1px 2px #57B227;
+  text-shadow: 0 1px 2px #5f5f5f;
   position: relative;
   font-size: 16px;
   cursor: pointer;
 }
-.button:after{
-  content: "";
-  display: inline-block;
-  position: absolute;
-  right: 30px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  height: icons-sprite-height(arrow_img);
-  width: icons-sprite-width(arrow_img);
-  @include icons-sprite(arrow_img);
+
+.button{
+  transition: all .4s ease-out;
+
+  &:after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: icons-sprite-height(arrow_img);
+    width: icons-sprite-width(arrow_img);
+    @include icons-sprite(arrow_img);
+    transition: all .4s;
+  }
+  &:hover:after{
+    right: 20px;
+  }
+  &:hover{
+    -webkit-box-shadow: inset 0px 0px 40px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 40px -9px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 40px -9px rgba(0,0,0,0.75);
+    background: #57B227;
+  }
 }
+

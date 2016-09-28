@@ -22,6 +22,7 @@
   text-decoration: none;
   display: block;
   color: black;
+  transition: all .3s;
 }
 
 .menu_link__header{
@@ -39,21 +40,27 @@
   float: right;
 
   /* прячем активную ссылку */
-  &:hover .menu_link__active:after{
-    background: none;
-  }
+  //&:hover .menu_link__active:after{
+  //  background: none;
+  //}
 }
 
 /** подсвечиваем ссылку */
-.menu_link__active:after, .menu_link:hover:after{
-  content: "";
-  display: block;
-  height: icons-sprite-height(pointer);
-  width: icons-sprite-width(pointer);
-  @include icons-sprite(pointer);
-  position: absolute;
-  top: 25px;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
+.menu_link__active{
+  &:after{
+    content: "";
+    display: block;
+    height: icons-sprite-height(pointer);
+    width: icons-sprite-width(pointer);
+    @include icons-sprite(pointer);
+    position: absolute;
+    top: 25px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+
+.menu_link:hover{
+  color: #86c840;
 }
