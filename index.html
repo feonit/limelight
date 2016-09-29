@@ -37,7 +37,7 @@
             <div class="tiles_row">
                 <div class="tile">
                     <div class="tile_preview">
-                        <img class="tile_preview_image" src="http://www.stevensegallery.com/300/225">
+                        <img class="tile_preview_image" data-top="30" data-left="-13" data-src="http://www.stevensegallery.com">
                         <div class="tile_bar">
                             <div class="tile_bar_in">
                                 <div class="tile_bar_date">June 1, 2016</div>
@@ -60,7 +60,7 @@
 
                 <div class="tile">
                     <div class="tile_preview">
-                        <img class="tile_preview_image" src="https://placebear.com/300/225">
+                        <img class="tile_preview_image" data-top="16" data-left="10" data-src="https://placebear.com">
                         <div class="tile_bar">
                             <div class="tile_bar_in">
                                 <div class="tile_bar_date">June 2, 2016</div>
@@ -83,7 +83,7 @@
 
                 <div class="tile">
                     <div class="tile_preview">
-                        <img class="tile_preview_image" src="http://placekitten.com/300/225">
+                        <img class="tile_preview_image" data-src="http://placekitten.com">
                         <div class="tile_bar">
                             <div class="tile_bar_in">
                                 <div class="tile_bar_date">June 3, 2016</div>
@@ -106,7 +106,7 @@
 
                 <div class="tile">
                     <div class="tile_preview">
-                        <img class="tile_preview_image" src="http://placebeard.it/300/225">
+                        <img class="tile_preview_image" data-src="http://placebeard.it">
                         <div class="tile_bar">
                             <div class="tile_bar_in">
                                 <div class="tile_bar_date">June 4, 2016</div>
@@ -129,7 +129,7 @@
 
                 <div class="tile">
                     <div class="tile_preview">
-                        <img class="tile_preview_image" src="http://www.placecage.com/c/300/225">
+                        <img class="tile_preview_image" data-src="http://www.placecage.com/c">
                         <div class="tile_bar">
                             <div class="tile_bar_in">
                                 <div class="tile_bar_date">June 5, 2016</div>
@@ -152,7 +152,7 @@
 
                 <div class="tile">
                     <div class="tile_preview">
-                        <img class="tile_preview_image" src="http://fillmurray.com/300/225">
+                        <img class="tile_preview_image" data-src="http://fillmurray.com">
                         <div class="tile_bar">
                             <div class="tile_bar_in">
                                 <div class="tile_bar_date">June 6, 2016</div>
@@ -201,5 +201,103 @@
             </div>
         </div>
     </div>
+<script>
+var app = (function(){
+    //TODO чтобы под отступом пустота не появилась
+    var tiles = document.querySelectorAll('.tile');
+    var parent = tiles[0].parentElement; // для делегирования, найдем родителя
+    var prevElem = null;
+    var imageSelectorClass = "tile_preview_image";
+
+    // для анимации
+    var SCALE = 1.55;
+
+    // для загрузки
+    var SCALE_FOR_LOAD = 3;
+
+    // в зависимости от параметров макета
+    var WIDTH_IMAGE_CONTAINER = 300;
+    var HEIGHT_IMAGE_CONTAINER = 225;
+
+    var _imageSizeWidth = Math.round(WIDTH_IMAGE_CONTAINER*SCALE_FOR_LOAD);
+    var _imageSizeHeight = Math.round(HEIGHT_IMAGE_CONTAINER*SCALE_FOR_LOAD);
+
+    var partOfURL = "/" + _imageSizeWidth + "/" + _imageSizeHeight;
+
+    function _hasClass(element, cls) {
+        return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+    }
+
+    function _onImageMouseMove(event){
+        var target = event.target;
+        var has = _hasClass(target, imageSelectorClass);
+
+        if (target && has && target!== prevElem){
+
+            var topPercent = target.getAttribute('data-top');
+            var leftPercent = target.getAttribute('data-left');
+
+
+            target.style.top = topPercent+"%";
+            target.style.left = leftPercent+"%";
+            target.style.transform = "scale("+SCALE+")";
+
+            if (prevElem){
+                prevElem.style = "";
+            }
+
+            prevElem = target;
+
+        }
+    }
+
+    function _onImageMouseOut(){
+        if (prevElem){
+            prevElem.style = "";
+        }
+
+        prevElem = null;
+    }
+
+    function _bindEvents(){
+        parent.addEventListener('mousemove', _onImageMouseMove, false);
+        parent.addEventListener('mouseout', _onImageMouseOut, false);
+    }
+
+    function _unbindEvents(){
+        parent.removeEventListener('mousemove', _onImageMouseMove);
+        parent.removeEventListener('mouseout', _onImageMouseOut);
+    }
+
+    function _initImageSrcData(){
+        var images = document.querySelectorAll('.' + imageSelectorClass);
+        images = Array.prototype.slice.call(images, 0);
+
+        images.forEach(function(img){
+            img.src = img.getAttribute("data-src") + partOfURL;
+            img.style.opacity = 0;
+            img.onload = function(){
+                img.style.opacity = 1;
+            }
+        });
+    }
+
+    function init(){
+        _initImageSrcData();
+        _bindEvents();
+    }
+
+    function destroy(){
+        _unbindEvents();
+    }
+
+    return {
+        init: init,
+        destroy: destroy
+    }
+}());
+
+app.init();
+</script>
 </body>
 </html>

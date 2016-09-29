@@ -19,6 +19,9 @@ $screen_three: $three_elem + $scroll + $wrapper_space;
 $screen_four: $four_elem + $scroll + $wrapper_space;
 $screen_five: $five_elem + $scroll + $wrapper_space;
 
+.tiles_row{
+  position: relative;
+}
 //1
 @media screen and (min-width: $screen_one) and (max-width: $screen_two) {
   .wrapper{
@@ -27,7 +30,6 @@ $screen_five: $five_elem + $scroll + $wrapper_space;
   .tiles_row{
     width: $one_elem;
     right: 0;
-    position: relative;
   }
   .quote{
     font-size: 18px;
@@ -56,7 +58,6 @@ $screen_five: $five_elem + $scroll + $wrapper_space;
   .tiles_row{
     width: $two_elem + 20px;// для создания пространства между элементами в списке
     right: 10px;// для создания пространства между элементами в списке
-    position: relative;// для создания пространства между элементами в списке
   }
 
   .menu_item{
@@ -75,7 +76,6 @@ $screen_five: $five_elem + $scroll + $wrapper_space;
   .tiles_row{
     width: $three_elem + 20px;
     right: 10px;
-    position: relative;
   }
 }
 
@@ -90,7 +90,6 @@ $screen_five: $five_elem + $scroll + $wrapper_space;
   .tiles_row{
     width: $four_elem + 20px;
     right: 10px;
-    position: relative;
   }
 }
 
@@ -105,6 +104,5 @@ $screen_five: $five_elem + $scroll + $wrapper_space;
   .tiles_row{
     width: $five_elem + 20px;
     right: 10px;
-    position: relative;
   }
 }
