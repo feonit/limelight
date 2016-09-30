@@ -1,187 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
     <title>LIMELIGHT</title>
     <link rel="stylesheet" type="text/css" href="build/stylesheets/common.css">
     <!--[if lte IE 8]>
     <link rel="stylesheet" type="text/css" href="build/stylesheets/ie8.css">
     <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
 </head>
 <body>
     <div class="wrapper">
-        <div class="content">
-            <div class="header">
-                <a href="/">
-                    <img class="logo" src="src/images/logo.png" alt="LimeLight" />
-                </a>
-                <ul class="menu menu__header">
-                    <li class="menu_item"><a class="menu_link menu_link__header menu_link__active home_icon" href="#"></a></li>
-                    <li class="menu_item"><a class="menu_link menu_link__header" href="#">Blog</a></li>
-                    <li class="menu_item"><a class="menu_link menu_link__header" href="#">Fonts</a></li>
-                    <li class="menu_item"><a class="menu_link menu_link__header" href="#">Templates</a></li>
-                    <li class="menu_item"><a class="menu_link menu_link__header" href="#">Icons</a></li>
-                    <li class="menu_item"><a class="menu_link menu_link__header" href="#">Wordpress</a></li>
-                </ul>
-            </div>
-            <div class="quote_bg">
+        <main class="content">
+            <header class="header">
+                <nav>
+                    <a href="/"><img class="logo" src="src/images/logo.png" alt="LimeLight" /></a>
+                    <ul class="menu menu__header">
+                        <li class="menu_item"><a class="menu_link menu_link__header menu_link__active home_icon" href="#"></a></li>
+                        <li class="menu_item"><a class="menu_link menu_link__header" href="#">Blog</a></li>
+                        <li class="menu_item"><a class="menu_link menu_link__header" href="#">Fonts</a></li>
+                        <li class="menu_item"><a class="menu_link menu_link__header" href="#">Templates</a></li>
+                        <li class="menu_item"><a class="menu_link menu_link__header" href="#">Icons</a></li>
+                        <li class="menu_item"><a class="menu_link menu_link__header" href="#">Wordpress</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="quote_bg">
                 <div class="quote_wrapper">
                     <p class="quotes quote">I absolutely love your freebies! Anytime I have to design a template
                         and I'm looking for resources. I come to your site first!</p>
                 </div>
-            </div>
-            <div class="title">
-                <p class="title_text_top">Fresh Freebies</p>
-                <p class="title_text_bottom">Download Till Your Heart's Content!</p>
-            </div>
-            <div class="tiles_row">
-                <div class="tile">
-                    <div class="tile_preview">
-                        <img class="tile_preview_image" data-top="30" data-left="-13" data-src="http://www.stevensegallery.com">
-                        <div class="tile_bar">
-                            <div class="tile_bar_in">
-                                <div class="tile_bar_date">June 1, 2016</div>
-                                <div class="tile_bar_indicators">
-                                    <span class="tile_indicator icon icon_eye">328</span>
-                                    <span class="tile_indicator icon icon_comment">12</span>
-                                    <span class="tile_indicator icon icon_download">128</span>
+            </section>
+            <section>
+                <header class="title">
+                    <h1 class="title_text_top">Fresh Freebies</h1>
+                    <p class="title_text_bottom">Download Till Your Heart's Content!</p>
+                </header>
+                <div class="tiles_row">
+                    <figure class="tile">
+                        <div class="tile_preview">
+                            <img class="tile_preview_image" data-top="26" data-left="-27" src="https://unsplash.it/465/349?image=10">
+                            <div class="tile_bar">
+                                <div class="tile_bar_in">
+                                    <div class="tile_bar_date">June 1, 2016</div>
+                                    <div class="tile_bar_indicators">
+                                        <span class="tile_indicator icon icon_eye">328</span>
+                                        <span class="tile_indicator icon icon_comment">12</span>
+                                        <span class="tile_indicator icon icon_download">128</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tile_title">
-                        <div class="tile_info">
-                            <p class="tile_info_top_title">Responsive Showcase...</p>
-                            <p class="tile_info_bottom_title">Templates, PSD</p>
-                        </div>
-                        <a href="#" class="tile_btn_arrow"></a>
-                    </div>
-                </div>
+                        <figcaption class="tile_title">
+                            <div class="tile_info">
+                                <p class="tile_info_top_title">Responsive Showcase...</p>
+                                <p class="tile_info_bottom_title">Templates, PSD</p>
+                            </div>
+                            <a href="#" class="tile_btn_arrow"></a>
+                        </figcaption>
+                    </figure>
 
-                <div class="tile">
-                    <div class="tile_preview">
-                        <img class="tile_preview_image" data-top="16" data-left="10" data-src="https://placebear.com">
-                        <div class="tile_bar">
-                            <div class="tile_bar_in">
-                                <div class="tile_bar_date">June 2, 2016</div>
-                                <div class="tile_bar_indicators">
-                                    <span class="tile_indicator icon icon_eye">328</span>
-                                    <span class="tile_indicator icon icon_comment">12</span>
-                                    <span class="tile_indicator icon icon_download">128</span>
+                    <figure class="tile">
+                        <div class="tile_preview">
+                            <img class="tile_preview_image" data-top="-27" data-left="25" src="https://unsplash.it/465/349?image=12">
+                            <div class="tile_bar">
+                                <div class="tile_bar_in">
+                                    <div class="tile_bar_date">June 2, 2016</div>
+                                    <div class="tile_bar_indicators">
+                                        <span class="tile_indicator icon icon_eye">328</span>
+                                        <span class="tile_indicator icon icon_comment">12</span>
+                                        <span class="tile_indicator icon icon_download">128</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tile_title">
-                        <div class="tile_info">
-                            <p class="tile_info_top_title">Round Icon Set</p>
-                            <p class="tile_info_bottom_title">Icons, Misc</p>
-                        </div>
-                        <a href="#" class="tile_btn_arrow"></a>
-                    </div>
-                </div>
+                        <figcaption class="tile_title">
+                            <div class="tile_info">
+                                <p class="tile_info_top_title">Round Icon Set</p>
+                                <p class="tile_info_bottom_title">Icons, Misc</p>
+                            </div>
+                            <a href="#" class="tile_btn_arrow"></a>
+                        </figcaption>
+                    </figure>
 
-                <div class="tile">
-                    <div class="tile_preview">
-                        <img class="tile_preview_image" data-src="http://placekitten.com">
-                        <div class="tile_bar">
-                            <div class="tile_bar_in">
-                                <div class="tile_bar_date">June 3, 2016</div>
-                                <div class="tile_bar_indicators">
-                                    <span class="tile_indicator icon icon_eye">328</span>
-                                    <span class="tile_indicator icon icon_comment">12</span>
-                                    <span class="tile_indicator icon icon_download">128</span>
+                    <figure class="tile">
+                        <div class="tile_preview">
+                            <img class="tile_preview_image" data-top="0" data-left="27" src="https://unsplash.it/465/349?image=13">
+                            <div class="tile_bar">
+                                <div class="tile_bar_in">
+                                    <div class="tile_bar_date">June 3, 2016</div>
+                                    <div class="tile_bar_indicators">
+                                        <span class="tile_indicator icon icon_eye">328</span>
+                                        <span class="tile_indicator icon icon_comment">12</span>
+                                        <span class="tile_indicator icon icon_download">128</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tile_title">
-                        <div class="tile_info">
-                            <p class="tile_info_top_title">Nexa Free Font</p>
-                            <p class="tile_info_bottom_title">Font, Sans Serif</p>
-                        </div>
-                        <a href="#" class="tile_btn_arrow"></a>
-                    </div>
-                </div>
+                        <figcaption class="tile_title">
+                            <div class="tile_info">
+                                <p class="tile_info_top_title">Nexa Free Font</p>
+                                <p class="tile_info_bottom_title">Font, Sans Serif</p>
+                            </div>
+                            <a href="#" class="tile_btn_arrow"></a>
+                        </figcaption>
+                    </figure>
 
-                <div class="tile">
-                    <div class="tile_preview">
-                        <img class="tile_preview_image" data-src="http://placebeard.it">
-                        <div class="tile_bar">
-                            <div class="tile_bar_in">
-                                <div class="tile_bar_date">June 4, 2016</div>
-                                <div class="tile_bar_indicators">
-                                    <span class="tile_indicator icon icon_eye">328</span>
-                                    <span class="tile_indicator icon icon_comment">12</span>
-                                    <span class="tile_indicator icon icon_download">128</span>
+                    <figure class="tile">
+                        <div class="tile_preview">
+                            <img class="tile_preview_image" data-top="-27" data-left="-27" src="https://unsplash.it/465/349?image=14">
+                            <div class="tile_bar">
+                                <div class="tile_bar_in">
+                                    <div class="tile_bar_date">June 4, 2016</div>
+                                    <div class="tile_bar_indicators">
+                                        <span class="tile_indicator icon icon_eye">328</span>
+                                        <span class="tile_indicator icon icon_comment">12</span>
+                                        <span class="tile_indicator icon icon_download">128</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tile_title">
-                        <div class="tile_info">
-                            <p class="tile_info_top_title">Meteocons</p>
-                            <p class="tile_info_bottom_title">Icons, Weather</p>
-                        </div>
-                        <a href="#" class="tile_btn_arrow"></a>
-                    </div>
-                </div>
+                        <figcaption class="tile_title">
+                            <div class="tile_info">
+                                <p class="tile_info_top_title">Meteocons</p>
+                                <p class="tile_info_bottom_title">Icons, Weather</p>
+                            </div>
+                            <a href="#" class="tile_btn_arrow"></a>
+                        </figcaption>
+                    </figure>
 
-                <div class="tile">
-                    <div class="tile_preview">
-                        <img class="tile_preview_image" data-src="http://www.placecage.com/c">
-                        <div class="tile_bar">
-                            <div class="tile_bar_in">
-                                <div class="tile_bar_date">June 5, 2016</div>
-                                <div class="tile_bar_indicators">
-                                    <span class="tile_indicator icon icon_eye">328</span>
-                                    <span class="tile_indicator icon icon_comment">12</span>
-                                    <span class="tile_indicator icon icon_download">128</span>
+                    <figure class="tile">
+                        <div class="tile_preview">
+                            <img class="tile_preview_image" data-top="27" data-left="-5" src="https://unsplash.it/465/349?image=15">
+                            <div class="tile_bar">
+                                <div class="tile_bar_in">
+                                    <div class="tile_bar_date">June 5, 2016</div>
+                                    <div class="tile_bar_indicators">
+                                        <span class="tile_indicator icon icon_eye">328</span>
+                                        <span class="tile_indicator icon icon_comment">12</span>
+                                        <span class="tile_indicator icon icon_download">128</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tile_title">
-                        <div class="tile_info">
-                            <p class="tile_info_top_title">The Bricks -UI Pack</p>
-                            <p class="tile_info_bottom_title">Templates, UI Kits</p>
-                        </div>
-                        <a href="#" class="tile_btn_arrow"></a>
-                    </div>
-                </div>
+                        <figcaption class="tile_title">
+                            <div class="tile_info">
+                                <p class="tile_info_top_title">The Bricks -UI Pack</p>
+                                <p class="tile_info_bottom_title">Templates, UI Kits</p>
+                            </div>
+                            <a href="#" class="tile_btn_arrow"></a>
+                        </figcaption>
+                    </figure>
 
-                <div class="tile">
-                    <div class="tile_preview">
-                        <img class="tile_preview_image" data-src="http://fillmurray.com">
-                        <div class="tile_bar">
-                            <div class="tile_bar_in">
-                                <div class="tile_bar_date">June 6, 2016</div>
-                                <div class="tile_bar_indicators">
-                                    <span class="tile_indicator icon icon_eye">328</span>
-                                    <span class="tile_indicator icon icon_comment">12</span>
-                                    <span class="tile_indicator icon icon_download">128</span>
+                    <figure class="tile">
+                        <div class="tile_preview">
+                            <img class="tile_preview_image" data-top="-27" data-left="13"  src="https://unsplash.it/465/349?image=16">
+                            <div class="tile_bar">
+                                <div class="tile_bar_in">
+                                    <div class="tile_bar_date">June 6, 2016</div>
+                                    <div class="tile_bar_indicators">
+                                        <span class="tile_indicator icon icon_eye">328</span>
+                                        <span class="tile_indicator icon icon_comment">12</span>
+                                        <span class="tile_indicator icon icon_download">128</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tile_title">
-                        <div class="tile_info">
-                            <p class="tile_info_top_title">Apple Cinema Display</p>
-                            <p class="tile_info_bottom_title">Templates, Mock-Ups</p>
-                        </div>
-                        <a href="#" class="tile_btn_arrow"></a>
-                    </div>
+                        <figcaption class="tile_title">
+                            <div class="tile_info">
+                                <p class="tile_info_top_title">Apple Cinema Display</p>
+                                <p class="tile_info_bottom_title">Templates, Mock-Ups</p>
+                            </div>
+                            <a href="#" class="tile_btn_arrow"></a>
+                        </figcaption>
+                    </figure>
                 </div>
-            </div>
-            <button class="button">MORE FREEBIES</button>
-            <div class="quote_bg">
+                <button class="button">MORE FREEBIES</button>
+            </section>
+            <section class="quote_bg">
                 <div class="quote_wrapper">
                     <p class="quotes quote">I absolutely love your freebies! Anytime I have to design a template
                         and I'm looking for resources. I come to your site first!</p>
                 </div>
-            </div>
-        </div>
-        <div class="footer">
+            </section>
+        </main>
+        <footer class="footer">
             <ul class="menu footer_menu footer_menu_width">
                 <li class="menu_item menu_item__interval_small"><a class="menu_link menu_link__footer" href="#">Home</a></li>
                 <li class="menu_item menu_item__interval_small"><a class="menu_link menu_link__footer" href="#">About</a></li>
@@ -196,10 +201,10 @@
                     <a class="social_link social_link__google" href="#" title="google"></a>
                 </div>
             </div>
-            <div class="footer_copyright">
+            <small class="footer_copyright">
                 Copyright 2016 DesignerFirst.com
-            </div>
-        </div>
+            </small>
+        </footer>
     </div>
 <script>
 var app = (function(){
@@ -212,17 +217,11 @@ var app = (function(){
     // для анимации
     var SCALE = 1.55;
 
-    // для загрузки
-    var SCALE_FOR_LOAD = 3;
-
     // в зависимости от параметров макета
-    var WIDTH_IMAGE_CONTAINER = 300;
-    var HEIGHT_IMAGE_CONTAINER = 225;
-
-    var _imageSizeWidth = Math.round(WIDTH_IMAGE_CONTAINER*SCALE_FOR_LOAD);
-    var _imageSizeHeight = Math.round(HEIGHT_IMAGE_CONTAINER*SCALE_FOR_LOAD);
-
-    var partOfURL = "/" + _imageSizeWidth + "/" + _imageSizeHeight;
+//    var WIDTH_IMAGE_CONTAINER = 300;
+//    var HEIGHT_IMAGE_CONTAINER = 225;
+//    var _imageSizeWidth = Math.round(WIDTH_IMAGE_CONTAINER*SCALE);
+//    var _imageSizeHeight = Math.round(HEIGHT_IMAGE_CONTAINER*SCALE);
 
     function _hasClass(element, cls) {
         return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
@@ -234,13 +233,20 @@ var app = (function(){
 
         if (target && has && target!== prevElem){
 
-            var topPercent = target.getAttribute('data-top');
-            var leftPercent = target.getAttribute('data-left');
+            var topPercent = target.getAttribute('data-top') || 0;
+            var leftPercent = target.getAttribute('data-left') || 0;
 
+            if (topPercent){
+                target.style.top = topPercent+"%";
+            }
 
-            target.style.top = topPercent+"%";
-            target.style.left = leftPercent+"%";
+            if (leftPercent){
+                target.style.top = topPercent+"%";
+                target.style.left = leftPercent+"%";
+            }
+
             target.style.transform = "scale("+SCALE+")";
+            console.log('top:'+topPercent + '%;', 'left:'+leftPercent + '%;', 'transform:'+ "scale("+SCALE+");");
 
             if (prevElem){
                 prevElem.style = "";
@@ -274,7 +280,6 @@ var app = (function(){
         images = Array.prototype.slice.call(images, 0);
 
         images.forEach(function(img){
-            img.src = img.getAttribute("data-src") + partOfURL;
             img.style.opacity = 0;
             img.onload = function(){
                 img.style.opacity = 1;
